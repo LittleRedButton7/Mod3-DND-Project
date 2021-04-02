@@ -157,7 +157,7 @@ h1 span {
 
 ## Features
 * Create a Character allows you to pull certain traits at random to quickly generate a D&D character.
-    -Delete and Try Again will allow you to pull another random trait if, for some reason, you don't like the first that was chosen at random.
+*   -Delete and Try Again will allow you to pull another random trait if, for some reason, you don't like the first that was chosen at random.
     -When you have a character that you'd like, Save to Character will save those attributes for you. 
 * Create a Monster allows you to pull a random monster from a list of D&D monsters.  
     -Delete and Try Again (same as for the Character) will allow you to pull another random monster if, for some reason, you don't like the first that was chosen at random.
