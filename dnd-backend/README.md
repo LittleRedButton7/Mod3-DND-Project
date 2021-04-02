@@ -4,7 +4,6 @@ Welcome to The Dungeon!
 
 ## Table of Contents
 * [General Info](#General-Info)
-<!-- * [Intro Video](#Intro-Video) -->
 * [Technologies](#Technologies)
 * [Setup](#Setup)
 * [Code Examples](#Code-Examples)
