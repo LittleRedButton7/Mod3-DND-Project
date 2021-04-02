@@ -157,11 +157,11 @@ h1 span {
 
 ## Features
 * Create a Character allows you to pull certain traits at random to quickly generate a D&D character.
-    **Delete and Try Again will allow you to pull another random trait if, for some reason, you don't like the first that was chosen at random.
-    **When you have a character that you'd like, Save to Character will save those attributes for you. 
+    -Delete and Try Again will allow you to pull another random trait if, for some reason, you don't like the first that was chosen at random.
+    -When you have a character that you'd like, Save to Character will save those attributes for you. 
 * Create a Monster allows you to pull a random monster from a list of D&D monsters.  
-    **Delete and Try Again (same as for the Character) will allow you to pull another random monster if, for some reason, you don't like the first that was chosen at random.
-    **Save to Monster, as the Save to Character, will save that randomly generated monster to your user profile for future reference.
+    -Delete and Try Again (same as for the Character) will allow you to pull another random monster if, for some reason, you don't like the first that was chosen at random.
+    -Save to Monster, as the Save to Character, will save that randomly generated monster to your user profile for future reference.
 
 ## Status
 This is a functional app, but with the limitations of getting our project compelted in a week, there is still quite a bit that can be built out. I have the auth set up on the Rails backend but didn't quite have time to link that to the front end. Also, a feature that I had wanted to add was the ability to save those characters and mosters to the user's profile. That would be an additional ability that would accompany the finilization of the auth. Lastly, it would be fun to build this out even more and add pictures of those monsters. The API didn't have those included, so I would have to figure out a way to hard code some images and pull those in on the front end depending on which monster was chosed at random based on name. 
