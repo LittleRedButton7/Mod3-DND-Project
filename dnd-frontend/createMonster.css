@@ -1,0 +1,108 @@
+body {
+    background-image: url("DungeonBackground3.png");
+    height: auto;
+    width: auto;
+    
+}
+
+h1{
+    align-content: center;
+    font-family: papyrus;
+    font-size: 75px;
+    font-weight: bolder;
+    color:#fd510d;
+    
+}
+
+.title {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+}
+
+.monster-container {
+    height: 400px;
+    width: 800px;
+    color:rgb(240, 234, 237);
+    text-shadow: 0 0 8px #0c0c0c, 0 0 10px hsl(0, 100%, 50%);
+    text-align: center;
+    /* background-color:rgb(145, 141, 143);
+    opacity: 0.2; */
+}
+
+.monster-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    /* justify-content: space-evenly; */
+}
+
+/* .character-div{
+    position: relative;
+} */
+
+
+.monster-div{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(252, 194, 119);
+    margin: 30px;
+    height: 65px;
+    width: 300px;
+    border-style: groove, px;
+    border-color:#f9fd0d;
+    border-width: 5px;
+    font-family: papyrus;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(253, 13, 13);
+    display: inline-block;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.delete-button{
+    margin: 30px;
+    height: 50px;
+    width: 100px;
+    border-style: groove, px;
+    border-color:#f9fd0d;
+    border-width: 5px;
+    font-family: serif;
+    font-size: 12px;
+    font-weight: bold;
+    color:rgb(253, 13, 13);
+    display: inline-block;
+    font-family: papyrus;
+}
+
+.monster-summary{
+    height: 50px;
+    width: 800px;
+    color:rgb(19, 18, 18);
+    font-family: papyrus;
+    font-size: 30px;
+    font-weight: 3em;
+    margin: auto;
+    text-align: center;
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(13, 13, 14), 0 0 0.2em rgb(255, 123, 0);
+    /* text-shadow: 0 0 10px #fffdfd, 0 0 20px hsl(0, 100%, 50%); */
+}

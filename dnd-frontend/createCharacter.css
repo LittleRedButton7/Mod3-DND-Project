@@ -1,0 +1,98 @@
+body {
+    background-image: url("DungeonBackground1.jpg");
+}
+
+h1{
+    align-content: center;
+    font-family: papyrus;
+    font-size: 75px;
+    font-weight: bolder;
+    color:#fd510d;
+    
+}
+
+.title {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+}
+
+.character-container {
+    height: 400px;
+    width: 800px;
+    color:rgb(240, 234, 237);
+    font-family: papyrus;
+    text-shadow: 0 0 8px #0c0c0c, 0 0 10px hsl(0, 100%, 50%);
+    /* background-color:rgb(145, 141, 143);
+    opacity: 0.2; */
+}
+
+.character-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}
+
+
+.character-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: rgb(252, 194, 119);
+    margin: 50px;
+    height: 65px;
+    width: 300px;
+    border-style: groove, px;
+    border-color:#f9fd0d;
+    border-width: 5px;
+    font-family: papyrus;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(253, 13, 13);
+    display: inline-block;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.delete-button{
+    margin: 30px;
+    height: 50px;
+    width: 100px;
+    border-style: groove, px;
+    border-color:#f9fd0d;
+    border-width: 5px;
+    font-family: serif;
+    font-size: 12px;
+    font-weight: bold;
+    color:rgb(253, 13, 13);
+    display: inline-block;
+    font-family: papyrus;
+    
+}
+
+.character-summary{
+    height: 50px;
+    width: 800px;
+    color:rgb(240, 234, 237);
+    font-family: papyrus;
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    text-shadow: 0 0 8px #0c0c0c, 0 0 10px hsl(0, 100%, 50%);
+}
