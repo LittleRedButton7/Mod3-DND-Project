@@ -1,0 +1,2 @@
+class SavedMonster < ApplicationRecord
+end

@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_31_215625) do
+ActiveRecord::Schema.define(version: 2021_04_02_172114) do
+
+  create_table "saved_monsters", force: :cascade do |t|
+    t.string "name"
+    t.integer "armor_class"
+    t.integer "hit_points"
+    t.integer "strength"
+    t.integer "dexterity"
+    t.integer "constitution"
+    t.integer "intelligence"
+    t.integer "wisdom"
+    t.integer "charisma"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"

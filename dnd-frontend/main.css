@@ -26,11 +26,6 @@ form{
 } */
 
 h1{
-    /* align-content: center;
-    font-family: papyrus;
-    font-size: 75px;
-    font-weight: bolder;
-    color:#fd510d; */
     margin: 0;
     padding: 0;
     position: absolute;
@@ -43,13 +38,11 @@ h1{
     font-family: papyrus;
     font-weight: 1500;
     text-shadow: 0 0 8px #fdef9d, 0 0 10px hsl(0, 100%, 50%);
-    /* opacity: 0; */
 }
 
 h1 span {
     display: inline-block;
     animation: animate 2s linear forwards;
-
 }
 
 @keyframes animate

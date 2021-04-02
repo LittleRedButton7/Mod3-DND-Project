@@ -8,6 +8,15 @@ const createRandomMonsterButton = document.querySelector('#create-random-monster
 
 const loginForm = document.querySelector('#login')
 
+// window.addEventListener('scroll', doParallax)
+
+// function doParallax(event) {
+//     const parallaxRatio = 0.25;
+//     const scrolly = window.scrollY;
+//     const bgY = scrolly * parallaxRatio;
+//     document.querySelector('body').style.backgroundPositionY = `${bgY}px`;
+// }
+
 loginForm.addEventListener("submit", event => {
     event.preventDefault()
 

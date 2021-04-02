@@ -1,17 +1,13 @@
 const baseURL = "https://www.dnd5eapi.co/api"
 
 const monster = {}
-// const classes = []
 const monsterContainer = document.querySelector('.monster-container')
 const monsterSummaryDiv = document.querySelector('.monster-summary')
 
 const saveToMonsterButton = document.querySelector('#save-to-monster-button')
 const generateMonsterButton = document.querySelector("#generate-button")
-// const generateRaceButton = document.querySelector("#generate-race-button")
-// const generateEquipmentButton = document.querySelector("#generate-equipment-button")
-// const generateSpellsButton = document.querySelector("#generate-spells-button")
 const tryAgainButton = document.querySelector('#try-again-button')
-// const getMoreInfoButton = document.querySelector('#more-info-button')
+
 
 
 function randomNumber(array){
@@ -28,6 +24,17 @@ saveToMonsterButton.addEventListener("click", () => {
     const monsterSummary = document.createElement('p')
     monsterSummary.textContent = `Your monster is a ${randomMonster.name} with the above listed traits. Good luck!`
     monsterSummaryDiv.append(monsterSummary)
+    
+    fetch("http://loaclhost:3000/saved_monsters", {
+        method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            "Content-Type": 'application/json'
+        },
+        body: JSON.stringify({randomMonster})
+    })
+        .then(response => response.json())
+        .then(result => console.log('result', result))
 })
 
 generateMonsterButton.addEventListener("click", () => {
@@ -58,16 +65,6 @@ generateMonsterButton.addEventListener("click", () => {
                         // monsterSpecialAbilities.textContent = ` Special Abilities: ${monsterURL.special_abilities.name} - ${monsterURL.special_abilities.desc}`
                     })
                 
-                // console.log("monster", monster)
-                // monsterArmorClass.textContent = `Armor Class: ${randomMonster.armor_class}`
-                // monsterHitPoints.textContent = `Hit Points: ${randomMonster.hit_points}`
-                // monsterStrength.textContent = `Strength: ${randomMonster.strength}`
-                // monsterDexterity.textContent = `Dexterity: ${randomMonster.dexterity}`
-                // monsterConstitution.textContent = `Constitution: ${randomMonster.constitution}`
-                // monsterIntelligence.textContent = `Intelligence: ${randomMonster.intelligence}`
-                // monsterWisdom.textContent = `Wisdom: ${randomMonster.wisdom}`
-                // monsterCharisma.textContent = `Charisma: ${randomMonster.charisma}`
-                // monsterSpecialAbilities.textContent = ` Special Abilities: ${monster.special_abilities.name} - ${monster.special_abilities.desc}`
             })
 
         
@@ -89,8 +86,10 @@ generateMonsterButton.addEventListener("click", () => {
                     monsterCard.remove()
                 })
                 
-                monsterCard.append(monsterName, monsterArmorClass, monsterHitPoints, monsterStrength, monsterDexterity, monsterConstitution, monsterIntelligence, monsterWisdom, monsterCharisma, monsterSpecialAbilities, deleteButton)
-                monsterContainer.append(monsterCard)
+            monsterCard.append(monsterName, monsterArmorClass, monsterHitPoints, monsterStrength, monsterDexterity, monsterConstitution, monsterIntelligence, monsterWisdom, monsterCharisma, monsterSpecialAbilities, deleteButton)
+            monsterContainer.append(monsterCard)
+
+
                 
     })
 })

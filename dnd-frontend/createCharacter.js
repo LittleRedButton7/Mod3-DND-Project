@@ -14,6 +14,7 @@ const tryAgainButton = document.querySelector('#try-again-button')
 // const getMoreInfoButton = document.querySelector('#more-info-button')
 
 
+
 function randomNumber(array){
     return Math.floor(Math.random()*array.length)
 }

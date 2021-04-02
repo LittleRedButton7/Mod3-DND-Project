@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :saved_monsters
+  post '/save_monster', to: 'saved_monsters#save_monster'
   # post "users", to: "users#create"
   resources :users, only: [:create]
   post '/login', to: 'authentication#login'
