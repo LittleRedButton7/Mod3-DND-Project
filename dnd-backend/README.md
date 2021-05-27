@@ -4,6 +4,7 @@ Welcome to The Dungeon!
 
 ## Table of Contents
 * [General Info](#General-Info)
+* [Demo](#Demo)
 * [Technologies](#Technologies)
 * [Setup](#Setup)
 * [Code Examples](#Code-Examples)
@@ -16,6 +17,8 @@ I used an external Dungeons & Dragons API to pull in data on different character
 
 <!-- ## Intro Video
 [Fly Away! on YouTube](https://youtu.be/P52TS0hV62s) -->
+
+[The Dungeon - Demo](https://www.loom.com/share/ee6604ccd0a74b4a976beace74159f69)
 
 ## Technologies
 * Ruby on Rails - 6.0.3, 6.0.3.5
