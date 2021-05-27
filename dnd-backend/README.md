@@ -18,7 +18,7 @@ I used an external Dungeons & Dragons API to pull in data on different character
 <!-- ## Intro Video
 [Fly Away! on YouTube](https://youtu.be/P52TS0hV62s) -->
 
-##Demo
+## Demo
 [The Dungeon - Demo](https://www.loom.com/share/ee6604ccd0a74b4a976beace74159f69)
 
 ## Technologies
